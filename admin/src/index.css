@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Graduate&family=Luxurious+Roman&family=Mate:ital@0;1&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oleo+Script:wght@400;700&family=Outfit:wght@100..900&family=Pacifico&family=Playwrite+AU+SA+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide Scrollbar */
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+/* Global Font Style */
+* {
+  font-family: 'Outfit', sans-serif; /* Change this to any font from your import list */
+}
+/* Make the sidebar scrollable */
+.sm\\:block {
+  overflow-y: auto;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #4B5563 #F3F4F6; /* Custom scrollbar color for Firefox */
+}
+
+/* Custom scrollbar styles for Webkit browsers (Chrome, Safari, etc.) */
+.sm\\:block::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sm\\:block::-webkit-scrollbar-thumb {
+  background-color: #4B5563;
+  border-radius: 10px;
+}
+
+.sm\\:block::-webkit-scrollbar-track {
+  background-color: #F3F4F6;
+}
+
+/* Adjust the indicator position */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
